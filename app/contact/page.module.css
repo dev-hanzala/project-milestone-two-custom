@@ -1,5 +1,5 @@
 .section {
-  margin: 0 auto;
+  margin: 0 auto 2rem auto;
   max-width: 96rem;
   padding: 3rem 1rem;
 }
@@ -41,10 +41,13 @@
   border-radius: 20px;
   transition: background-color 0.3s ease;
   height: 100%;
+  color: white;
+  text-decoration: underline #2d3748;
 }
 
 .contactCard:hover {
   background-color: #4a5568;
+  text-decoration: underline #4a5568;
 }
 
 .contactTitle {

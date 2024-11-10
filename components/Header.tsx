@@ -16,14 +16,14 @@ export default function Header() {
         <span className={styles.profileName}>Hanzala Waseem</span>
       </div>
       <nav className={styles.nav}>
-        <Link href="/" passHref>
-          <a className={styles.navLink}>Home</a>
+        <Link href="/" className={styles.navLink}>
+          Home
         </Link>
-        <Link href="/about" passHref>
-          <a className={styles.navLink}>About</a>
+        <Link href="/about" className={styles.navLink}>
+          About
         </Link>
-        <Link href="/contact" passHref>
-          <a className={styles.navLink}>Contact</a>
+        <Link href="/contact" className={styles.navLink}>
+          Contact
         </Link>
       </nav>
     </header>
