@@ -1,0 +1,26 @@
+.footer {
+  background-color: #2d3748;
+  padding: 1.5rem 0;
+}
+
+.container {
+  max-width: 96rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: text-decoration 0.3s ease;
+}
+
+.link:hover {
+  text-decoration: underline;
+}

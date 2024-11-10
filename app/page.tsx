@@ -1,95 +1,77 @@
 import Image from "next/image";
+import Hero from "@/components/Hero";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+    <>
+      <Hero heading="Hanzala Waseem" bg="/images/bg.jpg">
+        Web Developer & Student
+      </Hero>
+      <section className={styles.section}>
+        <div className={`${styles.aboutMe} ${styles.orderLast}`}>
+          <h2 className={styles.heading}>About Me</h2>
+          <p className={styles.description}>
+            I am a web developer specializing in Next.js. I build performant and
+            responsive apps using technologies like Tailwind CSS.
+          </p>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <div className={styles.profileImage}>
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src="/images/profile-picture.png"
+            alt="Profile Picture"
+            fill
+            className={styles.image}
           />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        </div>
+      </section>
+      <section className={styles.projectsSection}>
+        <div className={styles.projectCard}>
+          <h3 className={styles.projectTitle}>Next.js</h3>
+          <p className={styles.projectDescription}>
+            Next.js is a full-stack React framework that can be used for server
+            side rendering, static site generation, and more. I have extensive
+            experience with Next.js and use it for most of my projects.
+          </p>
           <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+            src="/svgs/nextjs.svg"
+            alt="Next.js Logo"
+            width={240}
+            height={240}
+            className={`${styles.projectImage} ${styles.invert}`}
           />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        </div>
+        <div className={styles.projectCard}>
+          <h3 className={styles.projectTitle}>Tailwind CSS</h3>
+          <p className={styles.projectDescription}>
+            Tailwind CSS is a utility-first CSS framework that allows you to
+            quickly create consistent and responsive designs. I have extensive
+            experience with Tailwind CSS and use it for most of my projects.
+            <Image
+              src="/svgs/tailwindcss.svg"
+              alt="Next.js Logo"
+              width={240}
+              height={240}
+              className={styles.projectImage}
+            />
+          </p>
+        </div>
+        <div className={styles.projectCard}>
+          <h3 className={styles.projectTitle}>TypeScript</h3>
+          <p className={styles.projectDescription}>
+            TypeScript is a statically typed version of JavaScript that allows
+            you to create robust and maintainable code. I have extensive
+            experience with TypeScript and use it for most of my projects.
+            <Image
+              src="/svgs/typescript.svg"
+              alt="Next.js Logo"
+              width={240}
+              height={240}
+              className={styles.projectImage}
+            />
+          </p>
+        </div>
+      </section>
+    </>
   );
 }

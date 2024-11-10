@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1.5rem 1.5rem 1rem 1.5rem;
+  background-color: #2d3748;
+  min-height: fit-content;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 2rem 2rem 1.5rem 2rem;
+  }
+}
+
+.profileContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.profileImage {
+  border-radius: 50%;
+}
+
+.profileName {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.navLink {
+  position: relative;
+  background-color: #4a5568;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.navLink:hover {
+  background-color: #2d3748;
+}
